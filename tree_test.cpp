@@ -1,4 +1,8 @@
 #include "BST.h"
+#include <iostream>
+
+using std::cout;
+using std::endl;
 
 int main() {
   BST<int>* bst = new BST<int>();
@@ -12,6 +16,12 @@ int main() {
 
 
   bst->print();
+  cout << "" << endl;
+  bst->remove(2);
 
+  bst->print();
+  cout << "" << endl;
+  bst->remove(5);
 
+  bst->print();
 }
